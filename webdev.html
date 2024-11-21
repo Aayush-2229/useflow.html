@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<style>
+    .main{
+        /* background-color: rgb(84, 74, 74); */
+        background-color: rgb(87, 71, 71);
+        color: white;
+    }
+
+
+
+    .navigation{
+
+display: flex;
+justify-content: space-between;
+padding-left: 3%;
+padding-right: 3%;
+}
+
+.nav {
+margin-top: 2%;
+}
+
+.nav a{
+   
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 19px;
+    padding: 29px;
+}
+.nav a:hover{
+    color: white;
+}
+@media(max-width:900px){
+    .nav {
+       display: none;
+    }
+}
+
+
+   .main .content{
+    line-height: 3rem;
+  display: flex;
+
+       
+    
+    }
+    @media(max-width:1100px){
+        .content{
+            flex-direction: column;
+            text-align: center;
+        }
+       
+      
+    }
+
+
+
+    .main .content .leftcontent{
+        padding: 5%;
+     
+    }
+    .main .content .leftcontent h1{
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .main .content .leftcontent button {
+        background-color: rgb(84, 74, 74);
+        border: 2px solid rgb(8, 8, 12);
+        border-radius: 15px;
+        padding: 11px 22px;
+
+    }
+    .main .content .leftcontent button a{
+        text-decoration: none;
+      color:rgb(230, 230, 235);
+        font-weight: 500;
+        font-size: 20px;
+        
+    }
+
+
+
+
+
+
+
+
+    .cards{
+       
+        padding: 2%;
+ 
+        display: flex;
+       
+        flex-wrap: wrap; 
+       justify-content: center;
+       align-items: center;
+    }
+    .cards button{
+        padding: 11px 23px;
+        background-color: rgb(84, 74, 74);
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    .cards button:hover{
+        background-color: black;
+        color: white;
+      border: 2px solid white;
+       
+    }
+   
+    .cards h2{
+        text-transform: uppercase;
+    }
+
+
+
+
+
+    .cards button a{
+        text-decoration: none;
+        color: rgb(244, 235, 235);
+        font-weight: 600;
+    }
+    .cardone{
+        padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+       
+        border-radius: 15px;
+        text-align: center;
+        margin: 2%;
+    }
+    .cardtwo{
+        padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+     
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+    }
+    .cardthree{
+        padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+       
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+    }
+    .cardfour{
+        padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+    }
+    .cardfive{
+        padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+    }
+    .cardsix{
+        padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+     
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+    }
+    .cardseven{  padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+     
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+
+    }
+    .cardeight{  padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+     
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+
+    }.cardnine{
+        padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+   
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+
+    }
+    .cardten{  padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+       
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+
+
+    }
+    .cardeleven{  padding: 3%;
+        line-height: 2rem;
+        border: 2px solid rgb(152, 141, 141);
+       
+        border-radius: 15px;
+        text-align: center;     margin: 2%;
+
+    }
+
+
+
+
+
+
+
+    .footer{
+        /* display: flex; */
+    }
+    .leftfooter{
+       
+        line-height: 2rem;
+        padding: 2%;
+    }
+    .leftfooter span{
+        opacity: 0.5;
+    }
+    
+    .footer .rightfooter{
+        display: flex;
+        justify-content: space-evenly;
+     
+        padding: 2%;
+        line-height: 2rem;
+
+    }
+
+    .rightfooter li{
+        list-style: none;
+        font-weight: 800;
+
+    }
+   @media(max-width:800px){
+
+    .leftfooter{
+        text-align: center;
+    }
+    .rightfooter{ margin-left: 5%;
+        flex-direction: column;
+    }
+   }
+
+
+    .end{
+        padding: 2%;
+    }
+    .end a{
+        margin: 2%;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+    }
+
+
+.icones{
+    text-align: end;padding-right: 4%;
+}
+.icones :hover{
+    color: rgb(178, 178, 197);
+}
+    .icones i{
+        color: black;
+        padding: 12px;
+        font-size: 29px;
+    }
+
+
+</style>
+
+<body>
+    <div class="main">
+
+
+        <div class="navigation">
+            <div class="logo">
+                <img src="lockup-dark-theme.svg" alt="" height="80px "width="220px">
+
+            </div>
+            <div class="nav">
+               <a href="">home</a>
+               <a href="">service</a>
+               <a href="">contact</a>
+               <a href="">course</a>
+            </div>
+        </div>
+
+        <hr>
+        <div class="content">
+            <div class="leftcontent">
+                <h1>Learn web development </h1>
+                <p>
+                    Explore our growing collection of courses on key web design and development subjects. An industry
+                    expert has written each course, helped by members of the Chrome team. Follow the modules
+                    sequentially, or dip into the topics you most want to learn about.
+                </p>
+                <button><a href="">show more</a></button>
+            </div>
+            <div class="rightcontent">
+                <img src="learn-header_856.png" alt="" width="500px"height="400px">
+
+            </div>
+        </div>
+        <hr>
+
+        <div class="cards">
+            <div class="cardone">
+                <img src="card_480.png" alt="" height="300px"width="400px"><br><br>
+
+                <span>couse</span>
+                <h2>LEARN HTML</h2>
+                <p> A solid overview of HTML for developers, from novice to expert level HTML. </p>
+                <button><a href=" "> start course</a></button>
+
+            </div>
+            <div class="cardtwo">
+                <img src="css.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2>
+                    learn css
+                </h2>
+                <p> A guide to CSS with modules covering everything from accessibility to z-index.</p>
+                <button><a href=" "> start course</a></button>
+            </div>
+
+
+            <div class="cardthree">
+                <img src="java.png" alt=""height="300px"width="400px"><br>
+                <span> couse</span>
+                <h2>LEARN javascript</h2>
+                <p>An in-depth course on the basics of JavaScript.
+                </p>
+                <button> <a href="">start course</a></button>
+            </div><br>
+
+            <div class="cardfour">
+                <img src="performance.png" alt=""height="300px"width="400px"><br>
+                <span> couse</span>
+                <h2>LEARN PERFORMANCE</h2>
+                <p>A course for those new to web performance, a vital aspect of the user experience.
+
+                </p>
+                <button> <a href="">start course</a></button>
+            </div>
+
+            <div class="cardfive">
+                <img src="design.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2> learn privacy</h2>
+                <p>
+                    A course to help you build more privacy-preserving websites.
+                </p>
+                <button><a href=" "> start course</a></button>
+            </div>
+
+
+            <div class="cardsix">
+                <img src="acceessiblity.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2> learn accessiblity</h2>
+                <p>
+
+
+                    Discover how to make your websites and web apps more accessible
+                </p>
+                <button><a href=" ">start course</a></button>
+            </div>
+
+            <div class="cardseven">
+                <img src="imges.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2>learn imges</h2>
+                <p>
+                    A course covering everything from selecting the right formats, to responsive images, and
+                    performance.
+                </p>
+                <button><a href="">start course</a></button>
+            </div>
+
+            <div class="cardeight">
+                <img src="design.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2>learn design</h2>
+                <p>Let's explore all aspects of responsive design, learning how to make sites that look great and work
+                    well for everyone.
+
+                </p>
+                <button>
+                    <a href=""> start course</a>
+                </button>
+            </div>
+            <div class="cardnine">
+                <img src="forms.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2>learn forms</h2>
+                <p> A course about HTML forms to help you improve your web developer expertise.</p>
+                <button><a href=""> start course</a></button>
+            </div>
+
+            <div class="cardten">
+                <img src="pwa.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2>learn PWA</h2>
+                <p>
+                    A course that breaks down every aspect of modern progressive web app development.
+                </p>
+                <button><a href="">start course</a></button>
+            </div>
+
+            <div class="cardeleven">
+                <img src="testing.png" alt=""height="300px"width="400px"><br>
+                <span>course</span>
+                <h2>learn testing</h2>
+                <p>An in-depth course on software testing.</p>
+                <button>
+                    <a href=""> start course</a>
+                </button>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <hr>
+
+        <div class="footer">
+            <div class="leftfooter">
+                <img src="lockup-dark-theme.svg" alt="" height="80px "width="220px"><br>
+                
+                <span>
+                    We want to help you build beautiful, accessible, fast, and secure websites that work cross-browser,
+                    and for all of your users. This site is our home for content to help you on that journey, written by
+                    members of the Chrome team, and external experts.
+                </span>
+            </div>
+            <div class="rightfooter">
+
+                <div class="footerone">
+                    <li>contribute</li>
+                    <li> file a bug</li>
+                    <li>see open issues</li>
+
+                </div>
+                <div class="footertwo">
+                    <li>related content</li>
+                    <li>chrome for developers</li>
+                    <li>case studies</li>
+                    <li>Chromium updates </li>
+                    <li>
+                        prodcasts & shows
+                    </li>
+
+                </div>
+                <div class="footerthree">
+                    <li>follow</li>
+                    <li>youtube</li>
+                    <li> Chrome for Developers on LinkedIn</li>
+                    <li>rss</li>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="icones">
+            <a href=" "> <i class="fa-brands fa-instagram"></i></a> 
+            <a href=""> <i class="fa-brands fa-square-twitter"></i></a>
+           <a href=" "> <i class="fa-brands fa-linkedin-in"></i> </a>
+            <a href=" "> <i class="fa-brands fa-facebook"></i> </a>
+        </div>
+      
+        <hr>
+        <div class="end"> 
+            <a href=" "> Privacy</a>|
+            <a href=""> Terms</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
